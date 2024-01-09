@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>University Enrollment System</h1>
+    <form id="form-container">
+      <input type="text" id="username" autocomplete="off" required />
+      <label for="username">Username</label><br />
+      <input type="password" id="password" autocomplete="off" required />
+      <label for="password">Password</label><br />
+      <button type="button" onclick="login()">Log In</button>
+    </form>
+    <h2 id="bloqued">
+      You have exceeded the maximum number of login attempts, your access has
+      been blocked.
+    </h2>
+    <section id="menu">
+      <h1>Available Programs</h1>
+      <input type="text" id="name" required placeholder="Enter your name" />
+      <input
+        type="text"
+        id="lastName"
+        required
+        placeholder="Enter your last name"
+      /><br />
+      <select name="programs" id="programs">
+        <option value="computer">Computer Science</option>
+        <option value="medicine">Medicine</option>
+        <option value="marketing">Marketing</option>
+        <option value="arts">Arts</option>
+      </select>
+      <select name="cities" id="cities">
+        <option value="london">London</option>
+        <option value="manchester">Manchester</option>
+        <option value="liverpool">Liverpool</option></select
+      ><br />
+      <button type="button" onclick="register()">Register</button>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
